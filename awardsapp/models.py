@@ -1,6 +1,13 @@
 from django.db import models
 
 # Create your models here.
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
+    bio = models.TextField(null=True)
+    profile_photo = CloudinaryField('profile_photo', null=True)
+
+
 class Project(models.Model):
     title = models.CharField(max_length = 60)
     project_image = CloudinaryField('project_image', null=True)
