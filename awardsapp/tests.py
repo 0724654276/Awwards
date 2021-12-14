@@ -21,7 +21,7 @@ class ProjectTestClass(TestCase):
 
 class RatingTestClass(TestCase):
     def setUp(self):
-        self.rating = Rating(user='montez', project='tessaract', review='mind-boggling', rate_design=10, rate_usability=9, rate_content=8)
+        self.rating = Rating(user='georgez', project='Nulla-quis', review='mind-boggling', rate_design=10, rate_usability=9, rate_content=8)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.rating, Rating))
