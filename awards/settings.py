@@ -45,9 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'awardsapp',
     'bootstrap5',
     'cloudinary',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
