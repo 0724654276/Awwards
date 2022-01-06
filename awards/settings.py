@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
@@ -17,7 +16,7 @@ import os
 from pathlib import Path
 import django_heroku
 import dj_database_url
-from decouple import config
+#from decouple import config
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6qc5oes4t!&laax=^%wfgh#fmit7osi$0s)#mld%ii=jc=9-^='
+SECRET_KEY = 'django-insecure-e4*xan((fsblsi4oz=4)rmo!pp9jk)e172ok_phr(3-40&*gm5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,19 +38,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'awardsapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'crispy_forms',
+    'awardsapp',
     'bootstrap4',
+    'crispy_forms',
     'cloudinary',
     'rest_framework',
-    
 ]
 
 MIDDLEWARE = [
@@ -91,9 +88,9 @@ WSGI_APPLICATION = 'awards.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'awards',
+        'NAME': 'awwwards',
         'USER': 'geroge',
-    'PASSWORD':'88',
+    'PASSWORD':'kamakia91',
     }
 }
 
